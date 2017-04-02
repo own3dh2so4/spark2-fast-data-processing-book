@@ -26,7 +26,7 @@ object SparkSQL extends App{
   val sparkAppName = prop("spark.session.appName").getOrElse("Spark App")
 
   //Folder paths
-  val inputFiles = prop("input.folder").getOrElse("")
+  val inputFiles = prop("input.folder").getOrElse("") + "nothwindDB/"
 
   val spark = SparkSession.builder.
     master(sparkMaster).appName(sparkAppName).getOrCreate()
