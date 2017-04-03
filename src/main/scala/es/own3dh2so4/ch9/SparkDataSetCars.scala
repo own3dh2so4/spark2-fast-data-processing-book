@@ -1,7 +1,8 @@
-package es.own3dh2so4
+package es.own3dh2so4.ch9
 
+import es.own3dh2so4.Properties
+import org.apache.spark.sql.functions.{avg, mean}
 import org.apache.spark.sql.{SaveMode, SparkSession}
-import org.apache.spark.sql.functions.{avg,mean}
 
 /**
   * Created by david on 2/04/17.

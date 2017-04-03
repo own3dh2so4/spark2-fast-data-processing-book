@@ -1,18 +1,10 @@
-package es.own3dh2so4
+package es.own3dh2so4.ch9
 
+import es.own3dh2so4.Properties
+import es.own3dh2so4.model.{Employee, Order, OrderDetails}
 import org.apache.spark.sql.SparkSession
 
-case class Employee(EmployeeID : String,
-                    LastName : String, FirstName : String, Title : String,
-                    BirthDate : String, HireDate : String,
-                    City : String, State : String, Zip : String,  Country : String,
-                    ReportsTo : String)
 
-case class Order(OrderID : String, CustomerID : String, EmployeeID : String,
-                 OrderDate : String, ShipCountry : String)
-
-case class OrderDetails(OrderID : String, ProductID : String, UnitPrice : Double,
-                        Qty : Int, Discount : Double)
 
 /**
   * Created by david on 2/04/17.
